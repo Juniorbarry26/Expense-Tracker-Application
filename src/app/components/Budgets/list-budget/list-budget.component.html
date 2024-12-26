@@ -1,0 +1,51 @@
+<div class="budget-container">
+
+  <div class="budget-details">
+    <h3 class="budget-title">Your Budgets</h3>
+
+
+    <table>
+      <thead>
+        <tr>
+          <th>Budget ID</th>
+          <th>Budget Name</th>
+          <th>Monthly Income</th>
+          <th>Start Date</th>
+          <th>End Date</th>
+          <th>Details</th>
+          <th>Edit</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Budget rows wil be generated here -->
+        <tr *ngFor="let budget of budgets">
+            <td> {{ budget.id}} </td>
+            <td> {{ budget.budgetName}} </td>
+            <td> {{ budget.monthlyIncome}} </td>
+            <td> {{ budget.startDate}} </td>
+            <td> {{ budget.endDate}} </td>
+            <td>
+              <button routerLink="/budget-details" class="detail-btn">
+                Details
+              </button>
+            </td>
+            <td>
+              <button (click)="editBudget(budget)" routerLink="/edit-budget" class="edit-btn">
+                Edit
+              </button>
+            </td>
+            <td>
+              <button (click)="deleteBudget(budget)"  class="delete-btn">
+                Delete
+              </button>
+            </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div>
+      <button class="new-budget" routerLink="/add-budget">Add New Budget</button>
+    </div>
+  </div>
+</div>

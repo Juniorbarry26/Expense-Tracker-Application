@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.budget-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.budget-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px 30px;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.budget-title {
+  color: #4CAF50;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+}
+
+form {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+/* Submit Button */
+.form-footer {
+  padding: 10px 0;
+}
+
+.btn-submit {
+  background: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background: #45a049;
+}
+
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  /* Budget container adjustments for smaller screens */
+  .budget-container {
+    padding: 20px;
+  }
+
+  .budget-card {
+    padding: 15px;
+    max-width: 100%;
+    margin: 0 15px;
+  }
+
+  .budget-title {
+    font-size: 1.5em;
+  }
+
+  /* Form adjustments for smaller screens */
+  .form-control {
+    font-size: 1em;
+    padding: 12px;
+  }
+
+  /* Adjust button for smaller screens */
+  .btn-submit {
+    padding: 14px 24px;
+    font-size: 1em;
+  }
+
+  .list-budget {
+    margin-left: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .budget-list {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Further adjustments for very small screens like phones */
+  .budget-title {
+    font-size: 1.2em;
+  }
+
+  .form-control {
+    font-size: 1.1em;
+    padding: 14px;
+  }
+
+  .btn-submit {
+    padding: 14px 24px;
+    font-size: 1.1em;
+  }
+
+  .budget-card {
+    padding: 10px;
+  }
+
+  .list-budget {
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+}

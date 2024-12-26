@@ -1,0 +1,72 @@
+.main {
+ height: 280px;
+}
+.main h1 {
+  justify-content: center;
+  text-align: center;
+  margin-top: 60px;
+  font-weight: bold;
+}
+
+.main p {
+  justify-content: center;  
+  text-align: center;
+  margin-top: 2px;
+}
+.center-button {
+  margin: 0 auto; 
+  width: 50%;
+  text-align: center; 
+  
+}
+
+.center-button .btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+.about-hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-hero > div {
+  text-align: center;
+  padding: 15px;
+  width: 30%;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about-hero > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-hero i {
+  font-size: 36px;
+  color: #4caf50;
+  margin-bottom: 10px;
+}
+
+.about-hero h3 {
+  font-size: 18px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.about-hero p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+

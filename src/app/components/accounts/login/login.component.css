@@ -1,0 +1,102 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and Centering */
+html,
+body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* Center entire content */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background: #f4f4f4;
+}
+
+/* Main Card Styling */
+.signup-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px 30px;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Title */
+.signup-title {
+  color: #4CAF50;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+}
+
+/* Form Group Styling */
+form {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+/* Submit Button */
+.form-footer {
+  padding: 10px 0;
+}
+
+.btn-submit {
+  background: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background: #45a049;
+}
+
+/* Login Suggestion */
+.login-suggestion {
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
+.login-suggestion .login-link {
+  color: #4CAF50;
+  text-decoration: none;
+  transition: text-decoration 0.2s ease;
+}
+
+.login-suggestion .login-link:hover {
+  text-decoration: underline;
+}
