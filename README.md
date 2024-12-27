@@ -15,7 +15,7 @@ The **Expense Tracker Application** is a dynamic full-stack web application buil
 ---
 
 ## **Tech Stack**
-- **Frontend**: Angular, Bootstrap for UI styling.
+- **Frontend**: Html, CSS, Angular and Typescript.
 - **Backend**: Node.js, Express.
 - **Database**: MongoDB with Mongoose ORM.
 - **Authentication**: JSON Web Tokens (JWT).
@@ -33,7 +33,7 @@ The **Expense Tracker Application** is a dynamic full-stack web application buil
 1. Clone the backend repository:
    ```bash
    git clone https://github.com/Juniorbarry26/Expense-Tracker-Application
-   cd expense-tracker-backend
+   cd BACKEND-API
    ```
 2. Install dependencies:
    ```bash
@@ -54,7 +54,7 @@ The **Expense Tracker Application** is a dynamic full-stack web application buil
 1. Clone the frontend repository:
    ```bash
    git clone https://github.com/Juniorbarry26/Expense-Tracker-Application
-   cd expense-tracker-frontend
+   cd ..
    ```
 2. Install dependencies:
    ```bash
