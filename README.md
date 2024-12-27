@@ -1,61 +1,107 @@
-<<<<<<< HEAD
-# MyApps
+# **Expense Tracker Application**
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.11.
+## **Project Description**
+The **Expense Tracker Application** is a dynamic full-stack web application built using the **MEAN (MongoDB, Express, Angular, Node.js)** stack. It enables users to efficiently manage their personal finances by tracking income, expenses, and generating insightful reports.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## **Features**
+### **User Features**
+- Add, edit, and delete income and expense entries.
+- Categorize expenses for better tracking.
+- Generate monthly, weekly, and yearly financial reports.
+- User authentication and secure data management.
 
-## Code scaffolding
+---
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## **Tech Stack**
+- **Frontend**: Angular, Bootstrap for UI styling.
+- **Backend**: Node.js, Express.
+- **Database**: MongoDB with Mongoose ORM.
+- **Authentication**: JSON Web Tokens (JWT).
 
-## Build
+---
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## **Installation and Setup**
 
-## Running unit tests
+### **Prerequisites**
+- Node.js (v16 or higher).
+- MongoDB (local or cloud-based, e.g., MongoDB Atlas).
+- Angular CLI.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-=======
-# Expense Tracker
-
-A powerful and intuitive expense tracker application built with the MEAN stack (MongoDB, Express.js, Angular, Node.js). This project helps users manage and analyze their expenses efficiently with a modern, user-friendly interface.
-
-## Features
-- **Add Expenses**: Record daily expenses with categories, amounts, and dates.
-- **Edit and Delete**: Update or remove expense records with ease.
-- **Expense Categories**: Categorize expenses (e.g., Food, Transport, Bills, etc.).
-- **Analytics**: Gain insights into spending habits with charts and summaries.
-- **Authentication**: Secure user registration and login.
-- **Responsive Design**: Optimized for both desktop and mobile devices.
-
-## Technologies Used
-- **Frontend**: Angular (TypeScript, HTML, CSS)
-- **Backend**: Node.js with Express.js
-- **Database**: MongoDB
-- **Version Control**: Git
-
-## Installation and Setup
-
-### Prerequisites
-- Node.js (v16 or later)
-- MongoDB (locally installed or hosted)
-- Git
-
-### Steps to Run Locally
-
-1. Clone the repository:
+### **Backend Setup**
+1. Clone the backend repository:
    ```bash
-   git clone https://github.com/Juniorbarry26/expense-tracker.git
-   cd expense-tracker
->>>>>>> edc2e5bc4329847c65c5dc1258119189008664b1
+   git clone https://github.com/Juniorbarry26/Expense-Tracker-Application
+   cd expense-tracker-backend
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Create a `.env` file and configure:
+   ```env
+   PORT=3000
+   MONGO_URI=<your_mongo_uri>
+   JWT_SECRET=<your_secret_key>
+   ```
+4. Start the server:
+   ```bash
+   node app.js
+   ```
+
+### **Frontend Setup**
+1. Clone the frontend repository:
+   ```bash
+   git clone https://github.com/Juniorbarry26/Expense-Tracker-Application
+   cd expense-tracker-frontend
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the Angular development server:
+   ```bash
+   ng serve
+   ```
+
+---
+
+## **Usage**
+1. Open the frontend in your browser at [http://localhost:4200](http://localhost:4200).
+2. Register or log in to your account.
+3. Start tracking your income and expenses by adding entries.
+
+---
+
+## **Project Structure**
+### **Backend**
+```
+expense-tracker-backend/
+├── controllers/
+├── routes/
+├── models/
+├── middlewares/
+├── app.js
+├── package.json
+└── .env
+```
+
+### **Frontend**
+```
+expense-tracker-frontend/
+├── src/
+    ├── app/
+    │   ├── components/
+    │   ├── services/
+    │   ├── models/
+    ├── assets/
+    ├── environments/
+└── angular.json
+```
+
+---
+
+## **Contributors**
+- **Alsainey Barry** – *Software Engineer*
+- **Abdoulie Jallow** – *Software Developer*
