@@ -42,8 +42,8 @@ The **Expense Tracker Application** is a dynamic full-stack web application buil
 3. Create a `.env` file and configure:
    ```env
    PORT=3000
-   MONGO_URI=<your_mongo_uri>
-   JWT_SECRET=<your_secret_key>
+   MONGO_URI=<my_mongo_uri>
+   JWT_SECRET=<my_secret_key>
    ```
 4. Start the server:
    ```bash
