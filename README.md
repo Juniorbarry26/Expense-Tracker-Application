@@ -47,7 +47,7 @@ The **Expense Tracker Application** is a dynamic full-stack web application buil
    ```
 4. Start the server:
    ```bash
-   node app.js
+   node server.js
    ```
 
 ### **Frontend Setup**
