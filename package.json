@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:my-apps": "node dist/my-apps/server/server.mjs",
-    "dev": "../my-apps/BACKEND-API/server.js"
+    "dev": "nodemon ../my-apps/BACKEND-API/app.js"
   },
   "private": true,
   "dependencies": {
@@ -25,7 +25,6 @@
     "express": "^4.18.2",
     "expresss": "^0.0.0",
     "mongodb": "^6.12.0",
-    "mongose": "^0.0.2-security",
     "my-apps": "file:",
     "nodemon": "^3.1.9",
     "rxjs": "~7.8.0",
