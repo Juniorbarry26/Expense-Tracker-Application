@@ -1,7 +1,8 @@
+require('dotenv').config();
+
 const express = require('express');
 const app = express();
-const expenses = require('./routes/expenses');
-const budgets = require('./routes/budgets')
+const connectDB = require('./data/db/connect')
 
 
 // setting up build in middleware
@@ -14,12 +15,21 @@ app.get('/hello', (req, res) => {
   res.send('Expense Tracker application');
 })
 
-
-// using the expenses router and the budgets router
-app.use('/api/v1/expenses', expenses); 
-app.use('/api/v1/budgets', budgets)
-
 // port listening on port
 
-const port = 4000;
-app.listen(port, console.log(`Server is listening on http://localhost:${port}`));
+const port = process.env.PORT || 4000;
+
+const start = async () => {
+  try {
+    // await connectDB(process.env.MONGO_URI);
+    // console.log('Connected to DB..');
+    app.listen(port, () => {
+      console.log(`Server is running on http://localhost:${port}`);
+    });
+  } catch(error) {
+    // console.error('Error connecting to DB:', error.message);
+    process.exit(1);
+  }
+}
+
+start();
