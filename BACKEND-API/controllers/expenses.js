@@ -2,7 +2,8 @@ const expenses = require('../models/expenses');
 
 // Get all expenses
 const getAllExpenses = async (req, res) => {
-  res.status(200).send('Getting all expenses...');
+  const expense = await expenses.find({})
+  res.status(200).json({expense: expense});
 }
 
 // Get single expense by ID

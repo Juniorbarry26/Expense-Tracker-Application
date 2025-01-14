@@ -20,9 +20,15 @@ app.use('/api/v1/budget', budgetRouter);
 const port = process.env.PORT || 4000;
 
 const start = async () => {
-    app.listen(port, () => {
-      console.log(`Server is running on http://localhost:${port}`);
-    });
+    try {
+      // await connectDB(process.env.MONGO_URI);
+      app.listen(port, () => {
+        console.log(`Server is running on http://localhost:${port}`);
+      });
+    }
+    catch (error) {
+      // console.error('Error starting server:', error.message);
+    }
   
 }
 
