@@ -13,7 +13,7 @@ app.use('/api/v1/expense', expenseRouter);
 app.use('/api/v1/budget', budgetRouter);
 
 // Port and MongoDB URI
-const port = process.env.PORT || 6000;
+const port = process.env.PORT || 3000;
 const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/ExpenseTrackerApp';
 
 // Start server
