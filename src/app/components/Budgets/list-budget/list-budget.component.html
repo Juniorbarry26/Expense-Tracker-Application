@@ -7,7 +7,6 @@
     <table>
       <thead>
         <tr>
-          <th>Budget ID</th>
           <th>Budget Name</th>
           <th>Monthly Income</th>
           <th>Start Date</th>
@@ -20,7 +19,6 @@
       <tbody>
         <!-- Budget rows wil be generated here -->
         <tr *ngFor="let budget of budgets">
-            <td> {{ budget.id}} </td>
             <td> {{ budget.budgetName}} </td>
             <td> {{ budget.monthlyIncome}} </td>
             <td> {{ budget.startDate}} </td>

@@ -8,7 +8,7 @@ import { catchError, Observable } from 'rxjs';
 })
 export class BudgetService {
 
-  private apiUrl  = 'http://localhost:3000/budgets';  // Backend URL
+  private apiUrl  = 'http://localhost:3000/api/v1/budget';  // Backend URL
 
   constructor(private http: HttpClient) { }
 
