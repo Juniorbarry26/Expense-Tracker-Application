@@ -5,7 +5,6 @@
       <table>
         <thead>
           <tr>
-            <th>ID</th>
             <th>Date</th>
             <th>Category</th>
             <th>Amount</th>
@@ -15,7 +14,6 @@
         <tbody>
           <!-- Expense rows will be generated dynamically -->
           <tr *ngFor="let expense of expenses">
-            <td>{{ expense.id}}</td>
             <td>{{ expense.date }}</td>
             <td>{{ expense.category }}</td>
             <td>{{ expense.amount }}</td>
