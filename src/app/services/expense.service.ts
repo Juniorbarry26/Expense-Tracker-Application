@@ -8,7 +8,7 @@ import { Expense } from '../models/expense';
 })
 export class ExpenseService {
 
-  private apiUrl = 'http://localhost:3000/expenses'; // Backend URL
+  private apiUrl = 'http://localhost:3000/api/v1/expense'; // Backend URL
 
 
   constructor(private http: HttpClient) { }
