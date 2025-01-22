@@ -18,8 +18,8 @@ export class BudgetService {
     
   }
   // to get a budget by id(GET request)
-  getBudgetById(id: number): Observable<Budget> {
-    return this.http.get<Budget>(`${this.apiUrl}/${id}`)
+  getBudgetById(_id: string): Observable<Budget> {
+    return this.http.get<Budget>(`${this.apiUrl}/${_id}`)
   }
   // to add a new budget(POST request)
   addBudget(budget: Budget): Observable<Budget> {
@@ -28,12 +28,12 @@ export class BudgetService {
 
   // to update a new budget(PUT request)
   updateBudget(budget: Budget): Observable<Budget> {
-    return this.http.put<Budget>(`${this.apiUrl}/${budget.id}`, budget);
+    return this.http.put<Budget>(`${this.apiUrl}/${budget._id}`, budget);
   }
 
   // to delete a budget(DELETE request)
-  deleteBudget(id: number): Observable<void> {
-    return this.http.delete<void>(`${this.apiUrl}/${id}`);
+  deleteBudget(_id: string): Observable<void> {
+    return this.http.delete<void>(`${this.apiUrl}/${_id}`);
   }
 
 }

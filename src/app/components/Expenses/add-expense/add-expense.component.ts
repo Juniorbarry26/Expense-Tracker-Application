@@ -9,7 +9,7 @@ import { ExpenseService } from '../../../services/expense.service';
 })
 export class AddExpenseComponent  {
   expense: Expense = {
-    id: 0,
+    _id: '',
     date: '',
     category: '',
     amount: 0,
@@ -22,12 +22,12 @@ export class AddExpenseComponent  {
   // To Add new Expense
   addExpense(): void {
     // Logic to add new Expense
-    if(this.expense.id && this.expense.date && this.expense.category && this.expense.amount && this.expense.description) {
+    if(this.expense._id && this.expense.date && this.expense.category && this.expense.amount && this.expense.description) {
       this.expenseService.addExpense(this.expense).subscribe(() => {
         console.log('Expense added successfully');
         // Reset the form
         this.expense = {
-          id: 0,
+          _id: '',
           date: '',
           category: '',
           amount: 0,

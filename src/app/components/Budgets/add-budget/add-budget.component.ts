@@ -10,7 +10,7 @@ import { Budget } from '../../../models/budget';
 })
 export class AddBudgetComponent {
   budget: Budget = {
-    id: 0,
+    _id: '',
     budgetName: '',
     monthlyIncome: 0,
     startDate: new Date(),

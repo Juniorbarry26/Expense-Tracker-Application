@@ -20,8 +20,8 @@ export class ExpenseService {
     return this.http.get<Expense[]>(this.apiUrl);
   }
   // get expense by id (GET)
-  getExpenseById(id: number): Observable<Expense> {
-    return this.http.get<Expense>(`${this.apiUrl}/${id}`);
+  getExpenseById(_id: string): Observable<Expense> {
+    return this.http.get<Expense>(`${this.apiUrl}/${_id}`);
   }
 
   // Add new Expense (POST)
@@ -31,11 +31,11 @@ export class ExpenseService {
 
   // update an existing expense (PUT)
   updateExpense(expense: Expense): Observable<Expense> {
-    return this.http.put<Expense>(`${this.apiUrl}/${expense.id}`, expense);
+    return this.http.put<Expense>(`${this.apiUrl}/${expense._id}`, expense);
   }
 
   // delete an existing expense (DELETE) 
-  deleteExpense(id: number): Observable<{}> {
-    return this.http.delete(`${this.apiUrl}/${id}`);
+  deleteExpense(_id: string): Observable<{}> {
+    return this.http.delete(`${this.apiUrl}/${_id}`);
   }
 }

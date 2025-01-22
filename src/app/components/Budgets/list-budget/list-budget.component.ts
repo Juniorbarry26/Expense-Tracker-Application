@@ -39,7 +39,7 @@ export class ListBudgetComponent implements OnInit{
   editBudget(budget: Budget): void {
     this.budgetService.updateBudget(budget).subscribe((updatedBudget: Budget) => {
       // Find the index of the updated budget and replace it in the list
-      const index = this.budgets.findIndex(b => b.id === updatedBudget.id);
+      const index = this.budgets.findIndex(b => b._id === updatedBudget._id);
       if (index!== -1) {
         this.budgets[index] = updatedBudget; // Update the budget in the array
       }
@@ -49,8 +49,8 @@ export class ListBudgetComponent implements OnInit{
   // To delete a budget
   deleteBudget(budget: Budget): void {
     if (confirm(`Are you sure you want to delete the budget: ${budget.budgetName}?`)) {
-      this.budgetService.deleteBudget(budget.id).subscribe(() => {
-        this.budgets = this.budgets.filter(b => b.id !== budget.id);
+      this.budgetService.deleteBudget(budget._id).subscribe(() => {
+        this.budgets = this.budgets.filter(b => b._id !== budget._id);
       });
     }
   }

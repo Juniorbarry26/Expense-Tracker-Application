@@ -10,7 +10,7 @@ import { Budget } from '../../../models/budget';
 })
 export class EditBudgetComponent implements OnInit {
   budget: Budget = {
-    id: 0,
+    _id: '',
     budgetName: '',
     monthlyIncome: 0,
     startDate: new Date(),
@@ -24,8 +24,8 @@ export class EditBudgetComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    const id = +this.route.snapshot.paramMap.get('id')!;
-    this.budgetService.getBudgetById(id).subscribe(
+    const _id = +this.route.snapshot.paramMap.get('id')!;
+    this.budgetService.getBudgetById(_id.toString()).subscribe(
       (data) => {
         this.budget = data;
       },

@@ -1,5 +1,5 @@
 export interface Budget {
-  id: number;
+  _id: string;
   budgetName: string;
   monthlyIncome: number;
   startDate: Date;

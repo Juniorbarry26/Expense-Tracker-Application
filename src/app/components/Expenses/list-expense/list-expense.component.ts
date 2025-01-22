@@ -42,7 +42,7 @@ export class ListExpenseComponent implements OnInit {
     this.expenseService.updateExpense(expense).subscribe((updatedExpense: Expense) => {
 
       // Find the index of the updated expense and replace it in the list
-      const index = this.expenses.findIndex(e => e.id === updatedExpense.id);
+      const index = this.expenses.findIndex(e => e._id === updatedExpense._id);
       if (index !== -1) {
         this.expenses[index] = updatedExpense; // Update the expense in the array
       }
@@ -51,10 +51,10 @@ export class ListExpenseComponent implements OnInit {
 
   // Delete an expense
   deleteExpense(expense: Expense): void {
-    this.expenseService.deleteExpense(expense.id).subscribe(() => {
+    this.expenseService.deleteExpense(expense._id).subscribe(() => {
       
       // Remove the deleted expense from the expenses array
-      this.expenses = this.expenses.filter(e => e.id !== expense.id);     
+      this.expenses = this.expenses.filter(e => e._id !== expense._id);     
 
     });
   }

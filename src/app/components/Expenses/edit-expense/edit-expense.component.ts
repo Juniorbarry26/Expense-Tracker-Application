@@ -10,7 +10,7 @@ import { Expense } from '../../../models/expense';
 })
 export class EditExpenseComponent implements OnInit {
   expense: Expense = {
-    id: 0,
+    _id: '',
     date: '',
     category: '',
     amount: 0,
@@ -24,8 +24,8 @@ export class EditExpenseComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    const id = +this.route.snapshot.paramMap.get('id')!;
-    this.expenseService.getExpenseById(id).subscribe(
+    const _id = +this.route.snapshot.paramMap.get('_id')!;
+    this.expenseService.getExpenseById(_id.toString()).subscribe(
       (response) => {
         this.expense = response;
       },
